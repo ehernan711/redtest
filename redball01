@@ -1,0 +1,33 @@
+<!--"boilerplate" code. basic web page html structure-->
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Redball 01</title>
+<script src="http://lrn.icstars.org/redball.js"></script>
+<script>
+<!--creating our first function and giving it a set of rules to follow-->
+function sayhello()
+{
+alert("Hi Erik");
+}
+
+<!--create function to move ball right when button clicked-->
+function moveright()
+{
+redball.left=redball.left+30px;
+}
+</script>
+</head>
+<body>
+<!--creating a button and giving it something to do: "on click", call a function....
+have an intern restate the logic back. how did this happen-->
+<button onclick="sayhello();">Say Hello</button>
+<!--create another button, name it move right, call another function when clicked-->
+<button onclick="moveright();">Move Right</button>
+<!--google and find a redball image, download, save on desktop, and add to code-->
+<img src="redball.jpg" id="redball"/>
+</body>
+</html>
+
+
